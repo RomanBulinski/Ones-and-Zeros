@@ -1,3 +1,10 @@
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MainTest {
 
 
@@ -10,6 +17,15 @@ public class MainTest {
 //        assertEquals(9, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(1,0,0,1))));
 //
 //    }
+
+    //15 -> 1111
+
+    @Test
+    public void testMain1(){
+        assertEquals(15, Main.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(1,1,1,1))));
+    }
+
+
 
 
 }

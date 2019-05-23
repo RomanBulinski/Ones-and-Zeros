@@ -7,9 +7,9 @@ public class Main {
     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
 
         int result=0;
-        for(int i =1; i<binary.size(); i++){
-            if(binary[i]==0){
-                result = result + (int)pow(1,i);
+        for(int i =0; i<binary.size(); i++){
+            if(binary.get(i)==1){
+                result = result + (int)pow(2,i);
             }
         }
         return  result;
@@ -21,4 +21,4 @@ public class Main {
 
 
 
-//15 -> 1111
+
