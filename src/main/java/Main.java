@@ -9,9 +9,10 @@ public class Main {
         int result=0;
         for(int i =1; i<binary.size(); i++){
             if(binary[i]==0){
-                result = result + pow(1,i);
+                result = result + (int)pow(1,i);
             }
         }
+        return  result;
     }
 
 }
