@@ -13,7 +13,7 @@ public class MainTest {
 //
 //        assertEquals(1, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(0,0,0,1))));
 //        assertEquals(15, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(1,1,1,1))));
-//        assertEquals(6, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(0,1,1,0))));
+//        assertEquals(, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(0,1,1,0))));
 //        assertEquals(9, BinaryArrayToNumber.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(1,0,0,1))));
 //
 //    }
@@ -25,7 +25,15 @@ public class MainTest {
         assertEquals(15, Main.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(1,1,1,1))));
     }
 
+    @Test
+    public void testMain2(){
+        assertEquals(6, Main.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(0,1,1,0))));
+    }
 
+    @Test
+    public void testMain3(){
+        assertEquals(1, Main.ConvertBinaryArrayToInt(new ArrayList<>(Arrays.asList(0,0,0,1))));
+    }
 
-
+    
 }
