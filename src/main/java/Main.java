@@ -6,20 +6,13 @@ import static java.lang.Math.pow;
 
 public class Main {
 
-
-
     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
 
         Collections.reverse(binary);
-        boolean flag = true;
         int index= binary.size()-1;
-        while(flag){
-            if(binary.get(index)==0){
-                binary.remove(index);
-                index--;
-            }else {
-                flag = false;
-            }
+        if(binary.get(index)==0){
+            binary.remove(index);
+            index--;
         }
 
         int result=0;
