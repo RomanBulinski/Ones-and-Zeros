@@ -6,33 +6,31 @@ import static java.lang.Math.pow;
 
 public class Main {
 
+
+
     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
 
+        Collections.reverse(binary);
         boolean flag = true;
-        int index= 0;
-        List<Integer> binaryStart1 = new ArrayList<>();
-
+        int index= binary.size()-1;
         while(flag){
             if(binary.get(index)==0){
-                index++;
+                binary.remove(index);
+                index--;
             }else {
                 flag = false;
             }
         }
 
-        for(int i = index; i<binary.size(); i++){
-            binaryStart1.add(binary.get(i));
-        }
-        Collections.reverse(binaryStart1);
-
         int result=0;
-        for(int i =0; i<binaryStart1.size(); i++){
-            if(binaryStart1.get(i)==1){
+        for(int i =0; i<binary.size(); i++){
+            if(binary.get(i)==1){
                 result = result + (int)pow(2,i);
             }
         }
         return  result;
     }
+
 
 }
 
