@@ -24,6 +24,16 @@ public class Main {
         return  result;
     }
 
+    // solution from CodeWars
+    public static int ConvertBinaryArrayToIntCodeWArs(List<Integer> binary) {
+
+        String result = "0";
+        for (Integer i : binary) {
+            result += String.valueOf(i);
+        }
+        return Integer.parseInt(result, 2);
+    }
+
 
 }
 
